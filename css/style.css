@@ -7,4 +7,59 @@ body {
         background-color: rgb(223, 187, 193);
       }
 
-    
+p {
+  width: 50%;
+}
+article .bold-text {
+font-weight: bold;
+}
+article>h2 {
+  border-bottom: 2px dotted rgba(48, 8, 38, 0.76);
+  font-family: monospace;
+  font-size: xx-large;
+}
+#text-color+p {
+  color: purple;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: large;
+  font-weight: bolder;
+}
+#floating-image {
+  width: 300px;
+  margin-left: 50px;
+  box-shadow: 3px 3px 10px black; 
+}
+.name-text {
+  font-family: cursive;
+  font-size: x-large;
+  font-stretch: normal;
+  text-align: center;
+  margin: 10px 100px 10px;
+  
+}
+#content ul {
+  list-style: none;
+}
+#content ul li {
+  display: inline-block;
+  color: rgb(26, 6, 17);
+}
+.name-text:hover {
+  color: purple;
+
+}
+li {
+  width: 400px;
+}
+a:link {
+  color: white;
+}
+a:visited {
+  color: black;
+}
+a:hover {
+  color: orange;
+}
+a:active {
+  color: red;
+}
