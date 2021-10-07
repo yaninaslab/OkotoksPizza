@@ -3,9 +3,6 @@ h1 {
     font-family: monospace;
     color: rgb(24, 3, 24);
 }
-body {
-        background-color: rgb(223, 187, 193);
-      }
 
 article .bold-text {
 font-weight: bold;
@@ -82,18 +79,84 @@ place-items: center;
 .menu-item>img {
   border-radius: 50%;
 }
-#page-header {
-  height: 200px ;
+.menu-item>h2,p {
+text-align: center;
+}
+
+body {
   display: grid;
-  grid-template-columns: 8fr 1fr 1fr;
-  place-items: center;
+  min-height: 100vh;
+}
+#page-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  background-color: tomato;
 }
 #page-header>img {
   justify-self: start;
   width: 150px;
 }
+#page-header>nav {
+  display: grid;
+  grid-auto-flow: column;
+  text-align: right;
+
+}
+#page-header>nav a {
+  margin: 10px;
+}
 #page-footer {
   display: grid;
   place-items: center;
   min-height: 10vh;
+}
+#desktop-page-footer {
+  display: grid;
+  place-items: center;
+  min-height: 10vh;
+  margin-bottom: 5px;
+}
+#desktop-page-footer>div a {
+  margin: 10px;
+}
+@media only screen and (min-width: 320px){
+  #desktop-page-footer {
+    display: none;
+  }
+   #page-header>nav {
+    grid-auto-flow: row;
+    justify-self: end;
+    max-width: 320px;
+   }
+   #page-header {
+    background-color: lightcoral;
+   }
+
+  }
+  @media only screen and (min-width: 768px){
+    #desktop-page-footer {
+      display: none;
+    }
+    #page-header {
+      background-color: coral;
+     }
+    #page-header>nav {
+      grid-auto-flow: column;
+      justify-self: end;
+     }
+    }
+@media only screen and (min-width: 1024px) {
+  #page-footer {
+    display: none;
+}
+#page-header {
+  background-color: tomato;
+ }
+#desktop-page-footer {
+  display: grid;
+}
+  #desktop-page-footer:hover {
+    color: violet;
+}
 }
