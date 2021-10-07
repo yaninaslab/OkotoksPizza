@@ -1,3 +1,15 @@
+@keyframes rainbow {
+  0% {
+      background-color: white;
+  }
+  50% {
+      background-color: lightcoral;
+  }
+  100% {
+      background-color: white;
+  }
+}
+
 h1 {
 
     font-family: monospace;
@@ -93,6 +105,13 @@ body {
   align-items: center;
   background-color: tomato;
 }
+#page-header {
+  animation-name: rainbow;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: initial;
+  animation-delay: 0.25s;
+}
 #page-header>img {
   justify-self: start;
   width: 150px;
@@ -132,6 +151,13 @@ body {
    #page-header {
     background-color: lightcoral;
    }
+   .menu-item:hover {
+    background-color: lightcoral;
+    box-shadow: 0px 2px 2px gray;
+    transition-property: color;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+  }
 
   }
   @media only screen and (min-width: 768px){
@@ -145,6 +171,13 @@ body {
       grid-auto-flow: column;
       justify-self: end;
      }
+     .menu-item:hover {
+      background-color: coral;
+      box-shadow: 0px 2px 2px gray;
+      transition-property: color;
+      transition-duration: 1s;
+      transition-timing-function: ease-in-out;
+    }
     }
 @media only screen and (min-width: 1024px) {
   #page-footer {
@@ -158,5 +191,15 @@ body {
 }
   #desktop-page-footer:hover {
     color: violet;
+}
+.menu-item:hover {
+  background-color: tomato;
+  box-shadow: 0px 2px 2px gray;
+  transition-property: color;
+  transition-duration: 1s;
+  transition-timing-function: ease-in-out;
+}
+#media-logo:hover {
+  box-shadow: 5px 5px 5px 5px lightsteelblue;
 }
 }
