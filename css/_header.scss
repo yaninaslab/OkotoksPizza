@@ -1,0 +1,25 @@
+
+@mixin flexCenter {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+
+    @include flexCenter();
+    background: grey;
+    height: 100vh;
+
+    button {
+       &:hover {
+           background: red;
+       }
+    }
+    button {
+        text-align: center;
+    }
+
+}
+

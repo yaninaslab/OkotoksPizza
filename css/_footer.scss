@@ -1,0 +1,15 @@
+page-footer {
+    display: grid;
+    place-items: center;
+    min-height: 10vh;
+    background-color: $client-color;
+  }
+  desktop-page-footer {
+    display: grid;
+    place-items: center;
+    min-height: 10vh;
+    margin-bottom: 5px;
+  }
+  desktop-page-footer>div a {
+    margin: 10px;
+  }
